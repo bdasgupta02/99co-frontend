@@ -11,12 +11,16 @@ const ListingItemPhotos = (props) => {
         dotsIndex: 0
     });
 
+    // extracting data from props
     const pics = props.photos.map((pic) => pic.url);
     const chosenPic = pics[state.index];
     const maxDots = pics.length >= 5 ? 5 : pics.length;
 
+    // function to change the photo in the sub-carousel slideshow browser
+    // towards left
     const changeIndexLeft = () => {
-        const newIndex = state.index - 1 >= 0 ? state.index - 1 : (state.index - 1) + pics.length;
+        const newIndex = state.index - 1 >= 0 ? 
+            state.index - 1 : (state.index - 1) + pics.length;
         changeState({
             index: newIndex,
             dotsIndex: newIndex === 0 ? 0 : 
@@ -26,8 +30,11 @@ const ListingItemPhotos = (props) => {
         });
     }
 
+    // function to change the photo in the sub-carousel slideshow browser
+    // towards right
     const changeIndexRight = () => {
-        const newIndex = state.index + 1 >= pics.length ? (state.index + 1) - pics.length : state.index + 1;
+        const newIndex = state.index + 1 >= pics.length ? 
+            (state.index + 1) - pics.length : state.index + 1;
         changeState({
             index: newIndex,
             dotsIndex: newIndex === pics.length - 1 ? state.dotsIndex : 
@@ -37,12 +44,14 @@ const ListingItemPhotos = (props) => {
         });
     }
 
+    // creating an array of the dot indicators below the photos
     let dotsArr = [];
     for (let i = state.dotsIndex; i < state.dotsIndex + maxDots; i++) {
         dotsArr.push(<ListingPhotosDot key={i} selected={state.index === i} edges={(i === state.dotsIndex && i > 0) || 
             (i === state.dotsIndex + maxDots - 1 && pics.length !== i + 1)} />);
     }
 
+    // final formatting with the photo, arrows and dot indicators
     return <div className="ListingItemPhotos">
         <img className="ListingItemPhotos-photos" alt="Property" src={chosenPic} />
         <div className="ListingItemPhotos-arrows">

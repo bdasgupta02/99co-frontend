@@ -15,6 +15,8 @@ class ListingItem extends PureComponent {
   }
 
   render() {
+    
+    // simple price formatting for display purposes
     const formatPrice = (price) => {
       if (price >= 1000000) {
         return '$' + Math.round((price * 100) / 1000000) / 100 + ' M';
@@ -30,10 +32,10 @@ class ListingItem extends PureComponent {
     const baths = this.props.listing.attributes.bathrooms_formatted;
     const sqft = this.props.listing.attributes.area_size_formatted;
     const photos = this.props.listing.photos;
-    let type = this.props.listing.main_category.toUpperCase();
+    let type = this.props.listing.sub_category_formatted.toUpperCase();
     type = type === 'LANDED' ? 'FOR SALE' : type + ' FOR SALE';
 
-    // formatted render
+    // formatted listing item with details
     return <div className="ListingItem">
       <div className="ListingItem-photos">
         <ListingItemPhotos photos={photos} />

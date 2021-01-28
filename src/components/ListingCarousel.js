@@ -40,7 +40,7 @@ class ListingCarousel extends Component {
     this.changeCarouselRight = this.changeCarouselRight.bind(this);
   }
 
-  componentDidUpdate(nextProps) {
+  componentWillUpdate(nextProps) {
     if (nextProps.listings !== this.props.listings) {
       this.setState((state) => {
         return {
@@ -66,7 +66,16 @@ class ListingCarousel extends Component {
     });
   }
 
+  // changes the Carousel display to show new listings
+  // automatically fetches new listing data once the limit is reached
   changeCarouselRight() {
+
+    // fetches more data from actions
+    if(this.state.index >= this.state.listings.length - 4) {
+      this.props.fetchData();
+    }
+    
+    // used to change the index where the display starts from
     this.setState({
       ...this.state,
       index: this.state.index + 4 >= this.state.listings.length ?
@@ -74,6 +83,7 @@ class ListingCarousel extends Component {
     });
   }
 
+  // changes the Carousel display to show previous listings
   changeCarouselLeft() {
     this.setState({
       ...this.state,
@@ -91,7 +101,7 @@ class ListingCarousel extends Component {
 
     if (!listings) return null;
     console.log("LISTINGS", listings);
-
+    
     const items = listings.map((listing, index) => {
       return (
         <ListingItem
@@ -101,7 +111,9 @@ class ListingCarousel extends Component {
         />
       );
     });
-
+    
+    // buffer array with 4 slots to display 4 listings on the page
+    // items get replaced once state is changed to show new listings
     let bufferItems = [];
     for (let i = 0; i < 4; i++) {
       if (this.state.index < items.length) {
@@ -111,7 +123,7 @@ class ListingCarousel extends Component {
       }
     }
 
-    // carousel formatting
+    // carousel formatting with a grid (similar to what i noticed in 99.co)
     return <div>
       <div className="ListingCarousel-holder">
         <div className="ListingCarousel-holder-subgrid">
