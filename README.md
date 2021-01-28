@@ -13,8 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Montserrat was used to replace Avenir Next seen in the original website due to easier availability and high similarity.
 - React components were used with the principle of composition (eg. listing items, photo dots).
 - Buttons were added which are not present in the original 99.co site to navigate across listings in the entire Carousel.
-- Actions were edited to optimize the automatic fetching of new listing data to overwrite the old listing data.
 - Modularity was used for all .css files to encourage easier hypothetical replication to other places/projects.
+- Actions were edited to optimize the automatic fetching of new listing data to overwrite the old listing data.
 
 # Improvements for the future:
 - Animations for a smoother user experience.
