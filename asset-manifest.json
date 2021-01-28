@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/99-frontend-junior-test/static/css/main.0b89237a.chunk.css",
+    "main.js": "/99-frontend-junior-test/static/js/main.c9583667.chunk.js",
+    "main.js.map": "/99-frontend-junior-test/static/js/main.c9583667.chunk.js.map",
+    "runtime-main.js": "/99-frontend-junior-test/static/js/runtime-main.f9165181.js",
+    "runtime-main.js.map": "/99-frontend-junior-test/static/js/runtime-main.f9165181.js.map",
+    "static/js/2.5d98092f.chunk.js": "/99-frontend-junior-test/static/js/2.5d98092f.chunk.js",
+    "static/js/2.5d98092f.chunk.js.map": "/99-frontend-junior-test/static/js/2.5d98092f.chunk.js.map",
+    "index.html": "/99-frontend-junior-test/index.html",
+    "precache-manifest.918087634ec9b92bc6fe0c33379ea4a9.js": "/99-frontend-junior-test/precache-manifest.918087634ec9b92bc6fe0c33379ea4a9.js",
+    "service-worker.js": "/99-frontend-junior-test/service-worker.js",
+    "static/css/main.0b89237a.chunk.css.map": "/99-frontend-junior-test/static/css/main.0b89237a.chunk.css.map",
+    "static/js/2.5d98092f.chunk.js.LICENSE.txt": "/99-frontend-junior-test/static/js/2.5d98092f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/99-frontend-junior-test/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9165181.js",
+    "static/js/2.5d98092f.chunk.js",
+    "static/css/main.0b89237a.chunk.css",
+    "static/js/main.c9583667.chunk.js"
+  ]
+}
