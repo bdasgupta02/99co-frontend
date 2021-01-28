@@ -1,0 +1,28 @@
+.ListingItem {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ListingItem-type {
+    text-align: left;
+    color: #FF72B6;
+    font-weight: 600;
+    font-size: 11px;
+    margin-top: 17px;
+}
+
+.ListingItem-price {
+    text-align: left;
+    color: #1A2258;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.ListingItem-sub {
+    text-align: left;
+    color: #1A2258;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 4px;
+}

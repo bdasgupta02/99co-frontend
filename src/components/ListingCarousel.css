@@ -1,0 +1,101 @@
+.ListingCarousel-column {
+    display: grid;
+    grid-template-columns: 2fr 1200px 2fr;
+}
+
+.ListingCarousel-holder {
+    display: grid;
+    grid-template-columns: 2fr 1200px 2fr;
+    margin-top: 50px;
+    margin-bottom: 38px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ListingCarousel-holder-subgrid {
+    display: grid;
+    grid-column-start: 2;
+    grid-template-columns: 2fr;
+}
+
+.ListingCarousel-holder-subgrid-bottom {
+    display: grid;
+    grid-column-start: 2;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.ListingCarousel-column-subgrid {
+    display: grid;
+    grid-column-start: 2;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.ListingCarousel-heading-text {
+    text-align: left;
+    font-weight: 700;
+    font-size: 26px;
+    color: #1A2258;
+    margin-left: 15px;
+    margin-right: auto;
+    grid-column-start: 1;
+}
+
+.ListingCarousel-heading-spacer {
+    width: 320px;
+    display: block;
+}
+
+.ListingCarousel-heading-button {
+    font-weight: bold;
+    font-size: 16px;
+    color: #216BFF;
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    text-decoration: none;
+    grid-column-start: 2;
+}
+
+.ListingCarousel-heading-button:hover {
+    color: #1757D7;
+}
+
+.ListingCarousel-footer-right {
+    grid-column-start: 9;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #216BFF;
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.ListingCarousel-footer-left {
+    grid-column-start: 8;
+    font-weight: bold;
+    font-size: 16px;
+    color: #216BFF;
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.ListingCarousel-footer-right:hover {
+    color: #1757D7;
+    cursor: pointer;
+}
+
+.ListingCarousel-footer-left:hover {
+    color: #1757D7;
+    cursor: pointer;
+}
+
+.ListingCarousel-item {
+    margin-left: 16px;
+    margin-right: 16px;
+}

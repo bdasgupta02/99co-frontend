@@ -10,6 +10,7 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Listing Carousel Test by 99.co</h2>
+          <div>By Bikramjit Dasgupta</div>
         </div>
         <ListingCarousel />
       </div>

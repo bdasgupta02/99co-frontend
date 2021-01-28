@@ -1,0 +1,32 @@
+.ListingPhotosDot {
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    background-color: rgba(255, 255, 255, 0.486);
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.ListingPhotosDot-selected {
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.ListingPhotosDot-edges {
+    border-radius: 50%;
+    height: 4px;
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.486);
+    display: inline-block;
+    margin-bottom: 11px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
