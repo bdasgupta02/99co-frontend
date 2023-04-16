@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and modified to provide a nice little challenge for 99.co frontend candidates.
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and modified to provide a nice little challenge for 99.co frontend candidates. Test
 
 # Goals
 - Create a carousel component that matches the design in `/public/carousel_demo.png` or on our [home page](https://www.99.co) - **DONE**
