@@ -18,7 +18,7 @@ function validateEmail(email) {
     }
 }
 
-function calculatePrice(quantity, price, discount) {
+function calculatePriceTotal(quantity, price, discount) {
     let totalPrice = quantity * price;
     if (discount) {
         if (discount.type === "percentage") {
